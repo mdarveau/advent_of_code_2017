@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+adventofcode2016.iml
+.idea
+
+scratch.coffee
+scratch.txt
