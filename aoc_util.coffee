@@ -27,5 +27,31 @@ module.exports = {
       for bi in [0..b.length-1]
         res.push if f? then f(ai, bi, a[ai], b[bi]) else [ai, bi, a[ai], b[bi]]
     return res
+ 
+  print2DArray: ( data ) ->
+    for r in data
+      console.log r.join(', ')
   
+  hash2DArray: ( data ) ->
+    hash = ""
+    for r in data
+      hash += "[#{r.join(',')}]"
+    return hash
+      
+    
+  # _.cloneDeep state
+  # _.some(collection, [predicate=_.identity])
+  # _.find(collection, [predicate=_.identity])
+  # .charCodeAt(0)
+  # .charAt(x)
+  # .substr
+  # _.orderBy( chars, ['count', 'charValue'], ['desc', 'asc'])
+  # md5 = require('js-md5'); md5(something)
+  # regex = "\\[[a-z]*(CAPTURE)[a-z]*\\]"; data.search(new RegExp(regex)) >= 0
+  # Array: 
+  #   unshift: add head
+  #   shift: remove head
+  #   push: add tail
+  #   pop: remove tail
+  # process.stdout.write
 }
