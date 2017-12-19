@@ -2,7 +2,6 @@ _ = require( 'lodash' )
 aoc = require( './aoc_util' )
 
 data = require( './data/day11' )
-#data = "ne,sw,nw,se,n,s"
 
 data = aoc.parseArray( data, ',' )
 
