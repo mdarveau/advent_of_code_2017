@@ -54,4 +54,5 @@ module.exports = {
   #   push: add tail
   #   pop: remove tail
   # process.stdout.write
+  # process.exit( 0 )
 }
