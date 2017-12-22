@@ -11,7 +11,6 @@ module.exports = {
   parse2DArray: ( data, delimiter = '\t', parser )->
     data = _.trimEnd( data, '\n' )
     data.split( '\n' ).map( ( d )->
-      data = module.exports.parseArray( data, delimiter )
       res = d.split( delimiter )
       res = res.map( ( d )->parser( d ) ) if parser?
       return res
