@@ -1,6 +1,3 @@
-aoc = require( './aoc_util' )
-_ = require('lodash')
+b = 109900
+c = 126900
 
-data = [1, 2, 3]
-
-console.log data[0..2].join(',')
